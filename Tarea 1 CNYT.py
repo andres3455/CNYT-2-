@@ -47,14 +47,4 @@ def polar_a_catersiano(x):
         parte_real=x[0]*math.cos(x[1])
         parte_imaginaria =x[0]*math.sin(x[1])
         return (parte_real,parte_imaginaria)
-"""retorna la fase de un numero complejo"""
-def fase_complejo(x,tita):
-        po=modulo(x)
-        if x[0]<0 and x[1]>0:
-                tita=math.atan(x[1]/x[0])+math.pi
-        if x[0]<0 and x[1]<1:
-                tita=math.atan(x[1]/x[0])+math.pi
-        if x[0]>0 and x[1]<0:
-                tita=math.atan(x[1]/x[0])+2*math.pi
-        return (po,tita)
 
